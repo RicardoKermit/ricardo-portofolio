@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta id="meta-description" name="description" content="Portfolio of Ricardo Silva, Software Developer focused on backend development, automation, system integration and AI." />
+    <title>Ricardo Silva | Software Developer</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- ================================================== -->
+    <!-- 01. HEADER -->
+    <!-- ================================================== -->
+    <header>
+      <div class="header-container">
+        <a class="brand" href="#hero">
+          <span class="brand-name">Ricardo Silva</span>
+          <span class="brand-role" data-i18n="brand.role">Software Developer</span>
+        </a>
+
+        <nav aria-label="Main navigation" data-i18n-aria-label="nav.ariaLabel">
+          <ul>
+            <li><a href="#work" data-i18n="nav.work">Work</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#education" data-i18n="nav.education">Education</a></li>
+            <li><a href="#other-projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+
+            <li class="nav-cv">
+              <a href="assets/documents/ricardo-silva-cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+            </li>
+
+            <li class="language-switch" aria-label="Language selector">
+              <button type="button" data-lang="en" aria-label="Switch to English">EN</button>
+              <span>/</span>
+              <button type="button" data-lang="pt" aria-label="Mudar para português">PT</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================================================== -->
+    <!-- 02. MAIN -->
+    <!-- ================================================== -->
+    <main>
+      <!-- ================================================== -->
+      <!-- HERO -->
+      <!-- ================================================== -->
+      <section id="hero">
+        <div class="hero-content">
+          <p class="hero-kicker" data-i18n="hero.kicker">01 / Profile</p>
+          <h1>Ricardo Silva</h1>
+          <p class="hero-role" data-i18n="hero.role">Software Developer</p>
+          <p class="hero-description" data-i18n="hero.description">
+            Building backend systems, workflow automation, enterprise integrations and AI-assisted business processes.
+          </p>
+
+          <div class="hero-meta">
+            <div>
+              <span data-i18n="hero.currently">Currently</span>
+              <strong>PRN Informática</strong>
+            </div>
+            <div>
+              <span data-i18n="hero.location">Based in</span>
+              <strong>Portugal</strong>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#work" data-i18n="hero.work">View Selected Work</a>
+            <a href="#contact" data-i18n="hero.contact">Contact</a>
+          </div>
+        </div>
+
+        <figure class="hero-profile">
+          <div class="profile-image-border">
+            <img src="assets/images/profile.png" alt="Portrait of Ricardo Silva" data-i18n-alt="hero.imageAlt" />
+          </div>
+          <figcaption>
+            <span data-i18n="hero.focus">Focus</span>
+            <strong data-i18n="hero.focusValue">Automation · Integration · Applied AI</strong>
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- ================================================== -->
+      <!-- SELECTED WORK -->
+      <!-- ================================================== -->
+      <section id="work">
+        <h2 data-i18n="work.title">Selected Work</h2>
+
+        <article class="project">
+          <p class="project-number">01</p>
+          <div>
+            <h3 data-i18n="work.order.title">Intelligent Order Processing</h3>
+            <p class="project-stack">n8n · SQL Server · PHC · JavaScript · Galene AI</p>
+          </div>
+          <div class="project-description">
+            <p data-i18n="work.order.p1">End-to-end automation for processing customer orders received through emails and PDF documents.</p>
+            <p data-i18n="work.order.p2">The workflow uses Galene AI to interpret natural language requests, identify customers, product references, quantities, prices and quotation numbers before validating and creating documents in PHC.</p>
+            <p data-i18n="work.order.p3">The solution includes multi-source pricing logic using quotation and order history, invoicing data, catalogue prices and automated external supplier queries.</p>
+            <p data-i18n="work.order.p4">It also includes ambiguity handling, fallback mechanisms, SQL transactional control, automatic HTML notifications and reusable workflows and sub-workflows.</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <p class="project-number">02</p>
+          <div>
+            <h3 data-i18n="work.map.title">Business Contact Map</h3>
+            <p class="project-stack">JavaScript · Leaflet · SQL Server · n8n · PHC</p>
+          </div>
+          <div class="project-description">
+            <p data-i18n="work.map.p1">Geographic platform integrated with PHC for exploring and prioritizing approximately 23,000 business contacts.</p>
+            <p data-i18n="work.map.p2">The application classifies contacts according to business rules such as availability, scheduled visits and recent commercial interactions.</p>
+            <p data-i18n="work.map.p3">It includes internal APIs for company details, visit history, comments and geolocation correction, as well as a geocoding pipeline with address normalization, caching, validation and auditing.</p>
+            <p data-i18n="work.map.p4">SQL queries were optimized to work with more than one million visit records using progressive data loading and separation between lightweight map data and complete company information.</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <p class="project-number">03</p>
+          <div>
+            <h3 data-i18n="work.ai.title">AI Learning Assistant</h3>
+            <p class="project-stack">Python · Flask · MCP · RAG · Google Gemini · Moodle</p>
+          </div>
+          <div class="project-description">
+            <p data-i18n="work.ai.p1">Master's dissertation project integrating Moodle with an AI-assisted learning system based on the Model Context Protocol and Retrieval-Augmented Generation.</p>
+            <p data-i18n="work.ai.p2">The system uses educational materials as contextual knowledge and Google Gemini models to automatically generate learning content such as summaries, quizzes and flashcards.</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- ================================================== -->
+      <!-- EXPERIENCE -->
+      <!-- ================================================== -->
+      <section id="experience">
+        <h2 data-i18n="experience.title">Experience</h2>
+
+        <article class="experience-item">
+          <p class="experience-period"><time datetime="2026-09">Sep 2026</time> — <span data-i18n="common.present">Present</span></p>
+          <div class="experience-content">
+            <div class="experience-heading">
+              <h3 data-i18n="experience.prn.role">Junior Software Developer</h3>
+              <p>PRN Informática</p>
+            </div>
+            <p data-i18n="experience.prn.description">Development of business process automation, ERP integration, internal applications and AI-assisted workflows using n8n, SQL Server, PHC, JavaScript, REST APIs and Galene AI.</p>
+            <ul>
+              <li data-i18n="experience.prn.li1">Development of an automated customer order processing system integrating email, PDF documents, AI, SQL Server and PHC.</li>
+              <li data-i18n="experience.prn.li2">Development of a geographic commercial platform for approximately 23,000 business contacts.</li>
+              <li data-i18n="experience.prn.li3">Design of modular workflow architectures and reusable sub-workflows for business processes and system integration.</li>
+              <li data-i18n="experience.prn.li4">Analysis of PHC database behaviour, including triggers, stock operations, reservations and relationships between ERP documents.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience-item">
+          <p class="experience-period"><time datetime="2026-01">Jan 2026</time> — <time datetime="2026-07">Jul 2026</time></p>
+          <div class="experience-content">
+            <div class="experience-heading">
+              <h3 data-i18n="experience.magma.role">Professional Internship</h3>
+              <p>Magma Studios</p>
+            </div>
+            <p data-i18n="experience.magma.p1">Developed process automations with Google Apps Script, Google Sheets and scheduled triggers.</p>
+            <p data-i18n="experience.magma.p2">Worked with digital forms using Alchemer and Google Forms, including conditional logic, validation and automatic response processing.</p>
+            <p data-i18n="experience.magma.p3">Also contributed to low-code applications, data validation and reporting dashboards using Glide and Looker Studio.</p>
+          </div>
+        </article>
+
+        <article class="experience-item">
+          <p class="experience-period"><time datetime="2024-09">Sep 2024</time> — <time datetime="2024-12">Dec 2024</time></p>
+          <div class="experience-content">
+            <div class="experience-heading">
+              <h3 data-i18n="experience.ipp.role">Research Fellow</h3>
+              <p data-i18n="experience.ipp.company">Polytechnic Institute of Porto</p>
+            </div>
+            <p data-i18n="experience.ipp.p1">Worked on Moodle customization for Challenge-Based Learning and the creation and integration of interactive educational content.</p>
+            <p data-i18n="experience.ipp.p2">Contributed to the adaptation of online courses related to Challenge-Based Learning and entrepreneurship.</p>
+          </div>
+        </article>
+
+        <article class="experience-item">
+          <p class="experience-period"><time datetime="2023-03">Mar 2023</time> — <time datetime="2023-06">Jun 2023</time></p>
+          <div class="experience-content">
+            <div class="experience-heading">
+              <h3 data-i18n="experience.imdigital.role">Backend Developer — Curricular Internship</h3>
+              <p>imDigital</p>
+            </div>
+            <p data-i18n="experience.imdigital.p1">Worked as a backend developer on the digital transformation of a construction log platform using Odoo and Python.</p>
+            <p data-i18n="experience.imdigital.p2">Developed CSV data import functionality, access permissions and PDF document generation for digital signature workflows.</p>
+          </div>
+        </article>
+
+        <article class="experience-item">
+          <p class="experience-period">2017 · 2018</p>
+          <div class="experience-content">
+            <div class="experience-heading">
+              <h3 data-i18n="experience.mediasis.role">ERP — Curricular Internship</h3>
+              <p>MediaSis</p>
+            </div>
+            <p data-i18n="experience.mediasis.p1">Worked with ERP GPAC support and configuration, including SQL queries for management reporting.</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- ================================================== -->
+      <!-- ABOUT -->
+      <!-- ================================================== -->
+      <section id="about">
+        <h2 data-i18n="about.title">About</h2>
+        <div class="about-layout">
+          <div class="about-text">
+            <p data-i18n="about.p1">I am a Software Developer based in Portugal focused on backend systems, process automation, enterprise integration and AI-assisted business workflows.</p>
+            <p data-i18n="about.p2">My current work involves understanding existing business processes and systems, identifying their technical constraints and building solutions that connect automation, databases, APIs, ERP systems and AI.</p>
+            <p data-i18n="about.p3">I also have experience in backend development, Retrieval-Augmented Generation, Model Context Protocol, microservices and web development.</p>
+          </div>
+
+          <div class="about-stack">
+            <div class="stack-group">
+              <h3 data-i18n="about.currentStack">Current Stack</h3>
+              <ul>
+                <li>n8n</li><li>SQL Server</li><li>T-SQL</li><li>PHC Advanced</li><li>JavaScript</li><li>C#</li><li>REST / HTTP</li><li>APIs</li><li>Galene AI</li><li>LLMs</li><li>AI Agents</li><li>Leaflet</li><li>Geocoding</li><li>Process Automation</li><li>System Integration</li><li>Workflow Architecture</li>
+              </ul>
+            </div>
+
+            <div class="stack-group">
+              <h3 data-i18n="about.alsoWorked">Also Worked With</h3>
+              <ul>
+                <li>Python</li><li>Java</li><li>C</li><li>Visual Basic .NET</li><li>TypeScript</li><li>Kotlin</li><li>Spring Boot</li><li>React</li><li>Ionic</li><li>PostgreSQL</li><li>Microsoft Access</li><li>Firebase</li><li>Docker</li><li>Kubernetes</li><li>Google Apps Script</li><li>Google Sheets</li><li>Google Forms</li><li>Odoo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================== -->
+      <!-- EDUCATION AND RESEARCH -->
+      <!-- ================================================== -->
+      <section id="education">
+        <h2 data-i18n="education.title">Education & Research</h2>
+
+        <article class="education-item">
+          <p class="education-period">2023 — 2025</p>
+          <div class="education-content">
+            <h3 data-i18n="education.master.title">Master's Degree in Computer Engineering</h3>
+            <p data-i18n="education.master.school">Polytechnic Institute of Porto — ESTG Felgueiras</p>
+          </div>
+        </article>
+
+        <article class="education-item">
+          <p class="education-period">2019 — 2023</p>
+          <div class="education-content">
+            <h3 data-i18n="education.bachelor.title">Bachelor's Degree in Computer Engineering</h3>
+            <p data-i18n="education.bachelor.school">Polytechnic Institute of Porto — ESTG Felgueiras</p>
+          </div>
+        </article>
+
+        <article class="education-item">
+          <p class="education-period">2015 — 2018</p>
+          <div class="education-content">
+            <h3 data-i18n="education.professional.title">Professional Course in Management and Programming of Computer Systems</h3>
+            <p>Escola Profissional de Valongo</p>
+          </div>
+        </article>
+
+        <article class="education-item publication">
+          <p class="education-period" data-i18n="education.publication.label">Publication</p>
+          <div class="education-content">
+            <h3>Challenge-Based Learning: a Technology Perspective</h3>
+            <p data-i18n="education.publication.meta">Co-author · International Journal of Technological Learning, Innovation and Development · 2026</p>
+            <p data-i18n="education.publication.description">Research on the role of technology in Challenge-Based Learning, focusing on digital tools for collaboration, active learning and the scalability of educational practices.</p>
+            <a href="https://doi.org/10.1504/IJTLID.2026.10071046" target="_blank" rel="noopener noreferrer" data-i18n="education.publication.link">View Publication</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- ================================================== -->
+      <!-- OTHER PROJECTS -->
+      <!-- ================================================== -->
+      <section id="other-projects">
+        <h2 data-i18n="projects.title">Other Projects</h2>
+
+        <article class="other-project">
+          <p class="other-project-number">01</p>
+          <div class="other-project-content">
+            <div class="other-project-heading">
+              <h3 data-i18n="projects.electoral.title">Microservices Digital Electoral Roll System</h3>
+              <p>2024 — 2025</p>
+            </div>
+            <p class="other-project-description" data-i18n="projects.electoral.description">System for the digitalization of electoral rolls using a microservices-based architecture.</p>
+            <p class="other-project-stack">Java · Spring Boot · PostgreSQL · Docker · Kubernetes</p>
+          </div>
+        </article>
+
+        <article class="other-project">
+          <p class="other-project-number">02</p>
+          <div class="other-project-content">
+            <div class="other-project-heading">
+              <h3 data-i18n="projects.construction.title">Digital Construction Log</h3>
+              <p>2023</p>
+            </div>
+            <p class="other-project-description" data-i18n="projects.construction.description">Continued development of a digital construction log prototype after the curricular internship. The project was presented at Aveiro Tech City 2023.</p>
+            <p class="other-project-stack">Odoo · Python · XML-RPC</p>
+          </div>
+        </article>
+
+        <article class="other-project">
+          <p class="other-project-number">03</p>
+          <div class="other-project-content">
+            <div class="other-project-heading">
+              <h3 data-i18n="projects.poap.title">Web3 POAP Certificate Application</h3>
+              <p data-i18n="projects.poap.period">2022 — 2023 · Group Project</p>
+            </div>
+            <p class="other-project-description" data-i18n="projects.poap.description">Web3 application for issuing Proof of Attendance Protocol certificates linked to blockchain-based digital assets.</p>
+            <p class="other-project-stack">Ionic · JavaScript · HTML</p>
+          </div>
+        </article>
+
+        <article class="other-project">
+          <p class="other-project-number">04</p>
+          <div class="other-project-content">
+            <div class="other-project-heading">
+              <h3 data-i18n="projects.android.title">Student Life Management Android Application</h3>
+              <p data-i18n="projects.android.period">2022 — 2023 · Group Project</p>
+            </div>
+            <p class="other-project-description" data-i18n="projects.android.description">Android application for managing school schedules, assessments, study sessions and communication between students. My main responsibility was the authentication system.</p>
+            <p class="other-project-stack">Android · Firebase</p>
+          </div>
+        </article>
+
+        <article class="other-project">
+          <p class="other-project-number">05</p>
+          <div class="other-project-content">
+            <div class="other-project-heading">
+              <h3 data-i18n="projects.tickets.title">Event Ticket Management Platform</h3>
+              <p data-i18n="projects.tickets.period">2021 · Group Project</p>
+            </div>
+            <p class="other-project-description" data-i18n="projects.tickets.description">Web platform for managing cultural events, venues, capacity and ticket purchasing workflows.</p>
+          </div>
+        </article>
+
+        <article class="other-project">
+          <p class="other-project-number">06</p>
+          <div class="other-project-content">
+            <div class="other-project-heading">
+              <h3 data-i18n="projects.hotel.title">Hotel Management System</h3>
+              <p>2019 — 2020</p>
+            </div>
+            <p class="other-project-description" data-i18n="projects.hotel.description">Command-line application for managing hotel reservations and customers using structured programming.</p>
+            <p class="other-project-stack">C</p>
+          </div>
+        </article>
+
+        <article class="other-project">
+          <p class="other-project-number">07</p>
+          <div class="other-project-content">
+            <div class="other-project-heading">
+              <h3 data-i18n="projects.upholstery.title">Upholstery Product Management Software</h3>
+              <p data-i18n="projects.upholstery.period">2017 — 2018 · Professional Aptitude Project</p>
+            </div>
+            <p class="other-project-description" data-i18n="projects.upholstery.description">Final Professional Aptitude Project focused on the development of software for managing upholstery products.</p>
+            <p class="other-project-stack">Visual Basic .NET · Microsoft Access</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- ================================================== -->
+      <!-- CONTACT -->
+      <!-- ================================================== -->
+      <section id="contact">
+        <h2 data-i18n="contact.title">Contact</h2>
+        <div class="contact-content">
+          <p data-i18n="contact.message">Interested in discussing software development, automation, system integration or applied AI?</p>
+          <ul>
+            <li><a href="mailto:ricardorodrigues2000@live.com.pt" data-i18n="contact.email">Email</a></li>
+            <li><a href="https://github.com/RicardoKermit" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/ricardo-rodrigues-4b551213a" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================================================== -->
+    <!-- 03. FOOTER -->
+    <!-- ================================================== -->
+    <footer>
+      <div class="footer-container">
+        <p data-i18n="footer.copyright">© 2026 Ricardo Silva. All rights reserved.</p>
+        <a href="#hero" data-i18n="footer.top">Back to top</a>
+      </div>
+    </footer>
+
+    <!-- ================================================== -->
+    <!-- 04. JAVASCRIPT -->
+    <!-- ================================================== -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
